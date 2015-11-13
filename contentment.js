@@ -7,7 +7,7 @@
 			return Math.floor((Math.random() * maxL) + parseInt(minL)); // Generates a random number between minL and maxL
 		};
 		
-		if (words !== undefined) {
+		if (words !== undefined) { // 1st part of optional paramater
 		
 			for (var w = 0; w < parseInt(words); w++) {
 			
@@ -15,11 +15,11 @@
 				
 				for (var c = 0; c < parseInt(chars); c++) {
 				
-					$theWord.push($characters[$mathRand(25, 1)]);
+					$theWord.push($characters[$mathRand(25, 1)]); // Shove a bunch of characters into $theWord
 				}
 				
-				$theWord = $theWord.toString().replace(/\,/gi, "");
-				this.append($theWord + " ");
+				$theWord = $theWord.toString().replace(/\,/gi, ""); // Convert $theWord to a string and remove all commas
+				this.append($theWord + " "); // Append $theWord to the object the function is called on
 				
 			}
 			
@@ -29,7 +29,7 @@
 			this.append($characters[$mathRand(26, 1)]);
 		}
 		
-		words = words || null;
+		words = words || null; // 2nd part of optional paramater
 		
 		return this;
 	};
