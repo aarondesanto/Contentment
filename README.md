@@ -3,8 +3,9 @@ Garbage Content Generator
 
 contentment.js is the only required file.
 
-Syntax: $('element').contentment(char, word);
+Syntax: $('element').contentment(char, [word]);
 
-Characters and words are both numbers. If "char" and "word" are both specified, you will be given "word" number of words which are each "char" letters long.
+char: Number -- Number of characters to be generated.
+word: Number -- Number of words to be generated.
 
-To generate characters only and not words, simply pass "word" null.
+If a 'word' argument is passed, 'char' will refer to characters per word.
