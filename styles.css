@@ -1,23 +1,55 @@
+@font-face {
+	font-family: 'LoopsOfW';
+	src: url('fonts/loopsofw.ttf');
+}
+html {
+	font-size: 12px;
+	font-family: 'LoopsOfW';
+	color: #EFEFFF;
+	background-color: #282828;
+}
 .titles {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 10%;
+	padding-top: 2%;
+	font-size: 4em;
 	text-align: center;
-	background-color: #AAAAAA;
+	text-shadow: 2px 2px 3px #101838;
+	background-color: #3366AA;
 }
 .content {
 	position: absolute;
 	top: 15%;
-	left: 5%;
-	width: 20%;
+	left: 40%;
+	width: 40%;
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #EFEFFF;
+	font-size: 1.25em;
 	text-align: center;
 }
-.caption {
+.nav {
 	position: absolute;
 	top: 15%;
-	left: 80%;
+	left: 10%;
 	width: 20%;
+	height: 10%;
 	text-align: center;
+}
+.navList {
+	width: 50%;
+	height: 10%;
+	margin: 2px auto;
+	padding: 10px;
+	border: 1px solid #EFEFFF;
+	font-weight: bold;
+	list-style: none;
+}
+.navList:hover {
+	width: 60%;
+	height: 20px;
+	padding-top: 15px;
 }
